@@ -1,0 +1,45 @@
+body {
+    background-color: lightblue;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+img {
+    width: 300px;
+    height: 200px;
+}
+#main-title {
+    color: blue;
+    text-align: center;
+}
+
+.section-title {
+    color: darkblue;
+}
+
+.places {
+    display: flex;
+}
+
+.place {
+    background-color: red;
+    padding: 15px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+
+.place:hover {
+    background-color: darkcyan;
+    color:white;
+}
+
+a:hover {
+    color: red;
+    background-color: darkblue;
+}
+
+.links {
+    text-align: right;
+}
