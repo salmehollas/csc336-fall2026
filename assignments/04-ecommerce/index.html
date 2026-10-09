@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>My Store</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>My Store</h1>
+
+        <button id="selectedButton" disabled>Add Selected to Cart</button>
+
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="shoes">Shoes</option>
+            <option value="protection">Protection</option>
+            <option value="equipment">Equipment</option>
+            <option value="accessories">Accessories</option>
+            <option value="clothing">Clothing</option>
+        </select>
+
+        <select id="sortSelect">
+            <option value="default">Sort By</option>
+            <option value="priceLow">Price: Low to High</option>
+            <option value="priceHigh">Price: High to Low</option>
+        </select>
+
+        <div id="storeDiv">
+
+            <div id="productsDiv"></div>
+
+            <div id="cartDiv">
+                <h2>Cart</h2>
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
