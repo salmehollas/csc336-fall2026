@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>My Store</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>My Store</h1>
+
+        <button id="selectedButton" disabled>Add Selected to Cart</button>
+
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="shoes">Shoes</option>
+            <option value="protection">Protection</option>
+            <option value="equipment">Equipment</option>
+            <option value="accessories">Accessories</option>
+            <option value="clothing">Clothing</option>
+        </select>
+
+        <select id="sortSelect">
+            <option value="default">Sort By</option>
+            <option value="priceLow">Price: Low to High</option>
+            <option value="priceHigh">Price: High to Low</option>
+        </select>
+
+        <h2>Add New Product</h2>
+
+        <form id="productForm">
+            <input id="nameInput" type="text" placeholder="Product name" required>
+
+            <input id="priceInput" type="number" placeholder="Price" min="0.01" step="0.01" required>
+
+            <textarea id="descriptionInput" placeholder="Description" required></textarea>
+
+            <select id="categoryInput" required>
+                <option value="">Choose a category</option>
+                <option value="shoes">Shoes</option>
+                <option value="protection">Protection</option>
+                <option value="equipment">Equipment</option>
+                <option value="accessories">Accessories</option>
+                <option value="clothing">Clothing</option>
+            </select>
+
+            <input id="imageInput" type="url" placeholder="Image URL" required>
+            <input type="submit" value="Add New Product">
+        </form>
+
+        <button id="resetButton">Reset Store</button>
+        <p id="formMessage"></p>
+
+        <div id="storeDiv">
+
+            <div id="productsDiv"></div>
+
+            <div id="cartDiv">
+                <h2>Cart</h2>
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

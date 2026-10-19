@@ -1,0 +1,23 @@
+#storeDiv {
+    display: flex;
+}
+
+#productsDiv {
+    width: 70%;
+}
+
+#cartDiv {
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+.selected {
+    background-color: lightblue;
+}
+
+#productsDiv img {
+    width: 160px;
+    height: 200px;
+}
